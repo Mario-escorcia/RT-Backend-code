@@ -26,7 +26,7 @@ function readCookie(req: Request, name: string): string | undefined {
 const cookieOptions = () => ({
   httpOnly: true,
   secure: cookieSecure,
-  sameSite: 'lax' as const,
+  sameSite: 'none' as const,
   path: '/',
 });
 
